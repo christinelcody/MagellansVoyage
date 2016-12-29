@@ -1,17 +1,17 @@
 module.exports = (app) => {
-  
+
   app.get('/', (req, res) => {
     res.sendFile('index.html', {
       root: './'
     });
-   
+
   })
 
   app.get('/canaryislands', (req, res) => {
     res.sendFile('canaryislands.html', {
       root: './'
     });
- 
+
   })
 
   app.get('/capeverde', (req, res) => {
@@ -25,14 +25,14 @@ module.exports = (app) => {
     res.sendFile('straitofmagellan.html', {
       root: './'
     });
- 
+
   })
 
   app.get('/guam', (req, res) => {
     res.sendFile('guam.html', {
       root: './'
     });
-   
+
   })
 
   app.get('/Philippines', (req, res) => {
@@ -41,7 +41,7 @@ module.exports = (app) => {
     });
 
   })
-  app.use((req, res)=> {
+  app.use((req, res) => {
     res.send('Magellan never set foot here!');
   })
 }
